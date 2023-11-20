@@ -2,9 +2,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body{
-    background-color: #313741;
+:root{
+    --bg1: #22252C;
+    --bg2: #313741;
+    --main-green:#00D7BB;
 }
+
+body{
+    background-color: var(--bg1);
+}
+
 
 header{
     height: 100vh;
@@ -15,6 +22,20 @@ header{
     color: white;
 }
 
+h2{
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 1.35px;
+    /*background: var(--grad, linear-gradient(90deg, #17D396 0%, #07F7F7 100%));*/
+    background: linear-gradient(90deg, rgba(23, 211, 150, 0.80) 0%, rgba(7, 247, 247, 0.80) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    text-transform: uppercase;
+    margin: auto;
+}
+
 section{
     padding: 100px 0px;
 }
@@ -22,6 +43,15 @@ section{
 
 ul, ol, nav{
     list-style: none;
+}
+
+.icon{
+    border-radius: 50%;
+    border: 1px solid var(--main-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-green);
 }
 
 .menu-top{
@@ -62,6 +92,10 @@ ul, ol, nav{
     font-size: 24px;
 }
 
+.about h2{
+    margin: unset;
+}
+
 .profile{
     position: relative;
     width: fit-content;
@@ -86,7 +120,7 @@ ul, ol, nav{
     position: absolute;
     height: 100%;
     width: 100%;
-    border: 7px solid #00D7BB;
+    border: 7px solid var(--main-green);
     top: -60px;
     left: 60px;
 }
@@ -109,4 +143,60 @@ ul, ol, nav{
 
 .button_get-resume i{
     margin-right: 6px;
+}
+
+.education{
+    background-color: var(--bg2);
+}
+
+.timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline_head{
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+}
+
+.timeline_content{
+    padding: 70px 0px;
+    position: relative;
+}
+
+.timeline_content:before{
+    content: "";
+    background-color: var(--main-green);
+    height: 100%;
+    width: 2px;
+    position: absolute;
+    margin-top: -70px;
+    left: calc(50% - 1px);
+}
+
+.timeline_block{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.timeline_block .icon{
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    background-color: var(--bg2);
+    z-index: 1;
+}
+
+.timeline_block:last-child{
+    margin-bottom: 0px;
+}
+
+.timeline_footer{
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-green);
+    border-radius: 50%;
 }
