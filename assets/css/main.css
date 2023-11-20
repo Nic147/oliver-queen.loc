@@ -147,6 +147,7 @@ ul, ol, nav{
 
 .education{
     background-color: var(--bg2);
+    color: white;
 }
 
 .timeline{
@@ -199,4 +200,45 @@ ul, ol, nav{
     height: 15px;
     background-color: var(--main-green);
     border-radius: 50%;
+}
+
+.work-exp{
+    color: white;
+}
+
+
+/*-----------------------education end-------------------------*/
+/*-----------------------skills start--------------------------*/
+
+.skills{
+    background-color: var(--bg2);
+}
+
+.skill-line{
+    background-color: black;
+    height: 4px;
+    display:flex;
+}
+
+.skill-exp{
+    height: 100%;
+    width: 0%;
+    background-color: var(--main-green);
+}
+
+.skill-count{
+    background-color: var(--main-green);
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-top: -2px;
+    margin-left: -4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.skill-count span{
+    position: absolute;
+    margin-top: -5px;
 }
