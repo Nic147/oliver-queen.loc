@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio, web design, web development</title>
     <link rel="stylesheet" type="text/css" href="assets/css/all.css">
+
 </head>
 <body>
+
+
     <div class="menu-top">
         <div class="container">
             <div class="row justify-content-between">
@@ -25,7 +29,7 @@
         <div class="container">
             <div class="header_info">
                 <h1>Hello!</h1>
-                <h2>I'm <b>Oliver Queen</b></h2>
+                <h2 class="header_h2">I'm <b>Oliver Queen</b></h2>
                 <div>Web & Interface Designer</div>
             </div>
         </div>
@@ -177,6 +181,33 @@
             </div>
         </div>
     </section>
+
+
+    <section class="contact-me">
+        <div class="container">
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="text" name="name" required>
+                        <label>Name *</label>
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="email" name="email" required>
+                        <label>Email *</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <textarea name="message" rows="10" required></textarea>
+                        <label>Message *</label>
+                    </div>
+                </div>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+    </section>
+
+
 
 </body>
 </html>

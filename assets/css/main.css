@@ -22,7 +22,7 @@ header{
     color: white;
 }
 
-h2{
+h2:not(.header_h2){
     font-size: 45px;
     font-weight: 700;
     letter-spacing: 1.35px;
@@ -242,3 +242,44 @@ ul, ol, nav{
     position: absolute;
     margin-top: -5px;
 }
+
+
+/*----------------------form------------------*/
+
+.contact-me textarea, .contact-me input{
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid #58616D;
+    outline: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.contact-me textarea:focus, .contact-me input:focus{
+    border-bottom-color: var(--main-green);
+}
+
+.contact-me{
+    color: white;
+}
+
+.contact-me label{
+    color: #58616D;
+    position: absolute;
+    left: 15px;
+    transition: 0.4s;
+}
+
+.contact-me textarea:focus ~ label, .contact-me input:focus ~ label{
+    font-size: 12px;
+    top: -16px;
+    color: var(--main-green);
+}
+
+.contact-me .row{
+    margin-bottom: 30px;
+}
+
+
+
